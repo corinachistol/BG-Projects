@@ -1,0 +1,270 @@
+@import 'config';
+@import 'responsive';
+@import 'navbar';
+
+body{
+  
+    background-image: url(../images/mainBg.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    // background-attachment: fixed;
+    // width: 100vw;
+    height: 93vh;
+    color: $text-color;
+    font-family: 'Monteserrat', sans-serif;
+    
+}
+  
+.co-main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:30px 30px ;
+    
+
+}
+
+.co-left-col{
+    
+    & h1{
+        font-weight: 100;
+    }
+   
+    & .co-subtitle{
+        font-size: 1.75rem;
+        font-weight:100;
+    }
+
+    & .co-description{
+        font-size: .8rem;
+    }
+    
+    & .co-btn-sm{
+        color: white;
+        border: none;
+        font-size:0.75rem;
+        padding-left: 0;
+
+        &:hover{
+            background-color: $secondary-color;
+        }
+
+        &:active{
+            color: $primary-color;
+        }
+        
+        & i{
+            font-size: 1.25rem;
+            margin-right: .25rem;
+            margin-left: 0;
+            font-weight: 100;
+            vertical-align: middle;
+        
+        }
+    }
+
+
+    & .co-btn-left{
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        color: $secondary-color;
+
+        &:hover{
+            color: $text-color;
+            background-color: $primary-color;
+            border: $primary-color;
+
+        }
+    }
+
+    & .co-btn-right{
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        color:$text-color;
+        background-color: $secondary-color;
+        border: $secondary-color;
+
+        &:hover{
+            color: $primary-color;
+            background-color: $text-color;
+        }
+
+    }
+    
+}
+
+
+.co-right-col{
+    background-color: rgba(18, 04,  23, 0.45);
+    padding: 2rem 1.75rem;
+    color: $text-color;
+    box-shadow: 0px 2px 12px $primary-color;
+
+       
+    & .co-progress-bar{
+        background-image: linear-gradient(90deg, #0de2cd , #67fa1e , transparent );
+    }
+    
+    
+    & .co-subtitle{
+        font-size: .75rem;        
+    }
+
+    & .co-sub-subtitle{
+        font-size: .55rem;
+    }
+    
+    .co-counter{
+        display: flex;
+        justify-content:center;
+        gap: .25rem;
+    
+        &-days{
+            width: 3rem;
+            height: 3rem;
+            background-color: $text-color;
+            border-radius: .25rem;
+            color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        &-hours{
+            width: 3rem;
+            height: 3rem;
+            background-color: $text-color;
+            border-radius: .25rem;
+            color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-minutes{
+            width: 3rem;
+            height: 3rem;
+            background-color: $text-color;
+            border-radius: .25rem;
+            color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-seconds{
+            width: 3rem;
+            height: 3rem;
+            background-color: $text-color;
+            border-radius: .25rem;
+            color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        
+    }
+
+    & .co-loading-bar{
+        width: 100%;
+        height: 15px;
+        background-color: $text-color;
+        border-radius: 5px;
+        display: flex;
+        
+        
+        & .co-colored-bar{
+            width: 70%;
+            height: inherit;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #0de2cd, #67fa1e);
+            display: flex;
+
+            & .co-first-limit{
+                width: 35%;
+                height: 17px;
+                border-right: 1px solid $text-color;
+            }
+            & .co-second-limit{
+                width: 30%;
+                height: 17px;
+                border-right: 1px solid $text-color;
+            }
+        }
+    }
+
+    & .co-limits{
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+        
+
+    }
+
+    & .co-btn-tokens{
+        width: 100%;
+        font-size: .85rem;
+        padding: 10px 20px;
+        box-shadow: 0px 0px 9px 0px #ff0062cf;
+        background-color: #ff0062cf;
+        border: none;
+        border-radius: 2%;
+        
+    }
+
+    & .co-icons {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}
+
+
+
+
+.footer{
+    font-size: 1.15rem;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    color: $text-color;
+    
+    & a{
+        text-decoration: none;
+        
+    }
+
+    &-icon{
+        border: 3px solid $text-color;
+        border-radius: 100%;
+        color:#180423;
+        background-color: $text-color;
+       
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
