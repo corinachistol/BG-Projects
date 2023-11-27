@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(227, 234, 234);
+    margin: 70px;
+}
+
+
+
+.App h1{
+    /* border: 1px solid orange; */
+    text-align: center;
+}
+
+.App h4{
+    text-align: center;
+}
+.cart{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    width: 60vw;
+    background-color: white;
+    /* border: 1px solid black;  */
+    border-top: none;
+}
+
+.cart-item{
+    display:  flex;
+    align-items:center;
+    /* justify-content: center; */
+    /* border:1px solid blue; */
+    border-bottom: 2px solid gray;
+}
+
+
+.product h3{
+    text-align: center;
+}
+.product img{
+    display: block;
+}
+
+.money, .quantity{
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+    margin: auto;
+}
+.quantity button{
+    display: inline-block;
+    margin:20px;
+}
+
+.container-filter{
+    border:1px solid rgb(227, 234, 234);
+    
+}
+.label{
+    display: block;
+    padding: 5px;
+}
+
+.input{
+    display: none;
+    
+}
+
+.span{
+    color: #89A;
+}
+.input:checked + span{
+    color:rgb(23, 24, 24);
+    cursor: pointer;
+}
+
+.input + span::before{
+    content:'◎';
+    padding-right: 5px;
+}
+
+.input:checked + span::before{
+    content:'◉';
+}
