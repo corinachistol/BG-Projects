@@ -1,0 +1,108 @@
+@import '../utils.scss';
+    
+// varianta cu mixin
+.snake{
+
+    @include component(
+        "head",
+        (50px 50px),
+        "./snake/snake_sprite.jpg",
+        (
+            "up":(-150px  0px),
+            "right":(-200px 0px),
+            "down":(-200px -50px),
+            "left":(-150px -50px),
+        )
+    );
+
+    @include component(
+        "body",
+        (50px 50px),
+        "./snake/snake_sprite.jpg",
+        (
+            "upDown": (-100px -50px),
+            "leftRight": (-50px 0px),
+            "downRight": (0px, 0px),
+            "upRight": (-100px, 0px),
+            "upLeft": (-100px, -100px),
+            "downLeft": (0px, -50px),
+
+    
+        )
+    );
+
+    @include component(
+        "tail",
+        (50px 50px),
+        "./snake/snake_sprite.jpg",
+        (
+            "up": (-200px -150px),
+            "right": (-150px -150px),
+            "down": (-150px -100px),
+            "left": (-200px -100px),
+        )
+    );
+
+    
+
+}
+
+
+
+
+
+
+//HW666*: using a sass map + @each try to generate this automatically
+        //hint: {'up':[...], 'right':[...]}
+
+        // varianta fara mixin
+
+// @mixin box {   
+//     width: 50px;
+//     height: 50px;
+// }
+
+
+// @use "sass:map";
+
+// $dirHead:(
+//     "up":(-150px, 0px),
+//     "down":(-200px,-50px),
+//     "left":(-150px,-50px),
+//     "right":(-200px,0px),
+// );
+
+// $dirTail:(
+//     "up": (-200px -150px),
+//     "right": (-150px -150px),
+//     "down": (-150px -100px),
+//     "left": (-200px -100px),
+// );
+
+
+// .snake{
+
+//     @each $name,$position in $dirHead{
+//         .dir-#{$name}{
+//             .head{
+//                 @include box;
+//                 background-image: url(./snake_sprite.jpg);
+//                 background-position-x: nth(map-get($dirHead, $name), 1);
+//                 background-position-y: nth(map-get($dirHead, $name), 2);
+//             }                 
+//         }
+      
+//     }
+
+
+//     @each $name,$position in $dirTail{
+//         .dir-#{$name}{
+//             .tail{
+//                 @include box;
+//                 background-image: url(./snake_sprite.jpg);
+//                 background-position-x: nth(map-get($dirTail, $name), 1);
+//                 background-position-y: nth(map-get($dirTail, $name), 2);
+//             }               
+//         }
+//     }
+// }

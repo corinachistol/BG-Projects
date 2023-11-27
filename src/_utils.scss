@@ -1,0 +1,17 @@
+
+@mixin component($name, $size, $background, $directions) {
+    .#{$name}{
+        width: nth($size,1);
+        height: nth($size,2);
+        background-image: url(#{$background});
+    }
+   .dir-{
+        @each $dir, $position in $directions{
+            &#{$dir}{
+                .#{$name}{
+                    background-position:nth($position,1) nth($position,2);
+                }
+            }
+        }
+   }
+}
