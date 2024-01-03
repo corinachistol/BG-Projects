@@ -1,0 +1,17 @@
+
+.flake{
+    position: absolute;
+    border-radius: 100%;
+    
+
+    width:var(--size);
+    height: var(--size);
+    // transform: scale(var(--size));
+    
+    top:var(--top);
+    left:var(--left);
+
+    background-image: radial-gradient(var(--color), transparent 60% ) ;
+    // background-color: var(---color);    
+    // overflow: hidden;
+}
