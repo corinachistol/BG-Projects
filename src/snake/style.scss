@@ -1,31 +1,41 @@
 @import '../utils.scss';
+
     
 // varianta cu mixin
 .snake{
 
+
     @include component(
         "head",
-        (50px 50px),
-        "./snake/snake_sprite.jpg",
+        (20px 20px),
+        "./game/sprite.jpg",
         (
-            "up":(-150px  0px),
-            "right":(-200px 0px),
-            "down":(-200px -50px),
-            "left":(-150px -50px),
+            "up":(-60px  0px),
+            "right":(-80px 0px),
+            "down":(-80px -20px),
+            "left":(-60px -20px),
         )
     );
 
     @include component(
         "body",
-        (50px 50px),
-        "./snake/snake_sprite.jpg",
+        (20px 20px),
+        "./game/sprite.jpg",
         (
-            "upDown": (-100px -50px),
-            "leftRight": (-50px 0px),
-            "downRight": (0px, 0px),
-            "upRight": (-100px, 0px),
-            "upLeft": (-100px, -100px),
-            "downLeft": (0px, -50px),
+            "up": (-40px -20px),
+            "right": (-20px 0px),
+            "down": (-40px -20px),
+            "left": (-20px 0px),
+
+            "up-right": (0px, 0px),
+            "down-right": (0px, -20px),
+            "up-left": (-40px, 0px),
+            "down-left":(-40px, -40px),
+
+            "left-down": (0px, 0px),
+            "left-up": (0px, -20px),
+            "right-down": (-40px, 0px),
+            "right-up":(-40px, -40px),
 
     
         )
@@ -33,13 +43,13 @@
 
     @include component(
         "tail",
-        (50px 50px),
-        "./snake/snake_sprite.jpg",
+        (20px 20px),
+        "./game/sprite.jpg",
         (
-            "up": (-200px -150px),
-            "right": (-150px -150px),
-            "down": (-150px -100px),
-            "left": (-200px -100px),
+            "down": (-80px -60px),
+            "right": (-80px -40px),
+            "up": (-160px -40px),
+            "left": (-60px -60px),
         )
     );
 
