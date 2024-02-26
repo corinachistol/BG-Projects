@@ -1,0 +1,93 @@
+.register-layout, .root-layout{
+    header nav{
+        display: flex;
+        gap:2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+        background-color: rgba(0,0,0,0.3);
+
+        input{
+            width: 20rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            outline: none;
+            padding: 0 .75rem;
+        }
+     
+       a{
+        text-decoration: none;
+        color: black;
+        padding: 0.5em;
+        font-size:1rem;
+        font-weight: 500;
+        border-radius: 4px;
+
+            &.active{
+                background: rgba(0,0,0,0.2);
+                color: #fff;
+            }
+       }
+    }
+
+    main{
+        .home{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            & h4,h2,p{
+                padding-top: .5rem ;
+                padding-bottom: 0.5rem ;
+            }
+
+            .video{
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+          
+        }
+
+        .women-layout{
+
+            &__description{
+                margin: 0 auto 8px;
+                max-width: 50%;
+
+                h2{
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                &_text_expander{
+                    display: flex;
+                    text-align:center;
+                    p{
+                        padding-right: .5rem;
+                    }
+
+                    button{
+                        margin: 1rem;
+                        font-size: 1rem;
+                        border:none;
+                        cursor: pointer;
+                        text-align:center;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+            .women-products{
+                display: grid;
+               grid-template-columns: repeat(3,1fr);
+            //    gap: 2rem;
+
+            }
+        }
+    }
+}
+
